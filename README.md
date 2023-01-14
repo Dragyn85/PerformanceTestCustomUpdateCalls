@@ -40,9 +40,8 @@ Do you have your own test to that u want to creat?
 4. Add "SpawnedObjectContainer" to target transfrom in the factory.
 
 Optional
-!. If you want the initialize time to be measured correctly use TestCase's Setup function to set the gameobject up.
-
-!. If the Manager needs some time to set up, create a "BoolValue" scriptable object from "create asset" menu and hook it up to the factory and your manager.
+1. If you want the initialize time to be measured correctly use TestCase's Setup function to set the gameobject up.
+2. If the Manager needs some time to set up, create a "BoolValue" scriptable object from "create asset" menu and hook it up to the factory and your manager.
 
 ## Original ReadMe
 
