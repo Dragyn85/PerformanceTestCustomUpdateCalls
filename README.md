@@ -34,7 +34,7 @@ In that scenario I would prefer a List most of the time, the Observer would also
 3. Run it
 
 Do you have your own test to that u want to creat?
-1. Drag in the PresetUpdateTest
+1. Drag in the PresetUpdateTest from the prefab folder
 2. Create a new gameobjec and add a c# script to be tested, make it inherit TestCase.
 3. Add it to the Factorys "Object to Instanciate.
 4. Add "SpawnedObjectContainer" to target transfrom in the factory.
