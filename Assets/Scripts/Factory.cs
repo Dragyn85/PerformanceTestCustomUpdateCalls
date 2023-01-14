@@ -8,9 +8,10 @@ namespace ObserverManager
     public class Factory : MonoBehaviour, ICreate
     {
         [SerializeField] TestCase ObjectToInstanciate;
-        [SerializeField] int numberOfInstances;
         [SerializeField] Transform tragetTransform;
         [SerializeField] BoolValue ManagerReady;
+        
+        int numberOfInstances;
         FPSTimer timer;
         
         public void SpawnAmount(int amountToSpawn)
