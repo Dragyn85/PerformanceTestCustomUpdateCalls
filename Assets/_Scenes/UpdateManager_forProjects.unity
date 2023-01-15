@@ -356,7 +356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToInstanciate: {fileID: 1209709787}
-  numberOfInstances: 100
   tragetTransform: {fileID: 2023490847}
   ManagerReady: {fileID: 0}
 --- !u!1 &247221672
@@ -580,7 +579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToInstanciate: {fileID: 1454170539}
-  numberOfInstances: 100
   tragetTransform: {fileID: 2023490847}
   ManagerReady: {fileID: 0}
 --- !u!1 &293224613
@@ -1208,7 +1206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToInstanciate: {fileID: 863107662}
-  numberOfInstances: 100
   tragetTransform: {fileID: 2023490847}
   ManagerReady: {fileID: 11400000, guid: 48e559ecc0e3226488dc7ad9574848b2, type: 2}
 --- !u!1 &619352706
@@ -1798,7 +1795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToInstanciate: {fileID: 1844935377}
-  numberOfInstances: 100
   tragetTransform: {fileID: 2023490847}
   ManagerReady: {fileID: 0}
 --- !u!1 &843834744
@@ -2521,7 +2517,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToInstanciate: {fileID: 843834745}
-  numberOfInstances: 100
   tragetTransform: {fileID: 2023490847}
   ManagerReady: {fileID: 11400000, guid: f8efbc7dd412b724da050788e18d1065, type: 2}
 --- !u!1 &1163232066
