@@ -18,6 +18,7 @@ Each manager updates a set amount of objects, all these updates do is increment 
 
 
 ## Results and thoughts when testing with 10 000 and 50 000 updated gameobjects:
+![Alt text](Pictures%20for%20ReadMe/Results%20for%2010000.png?raw=true "Title")![Alt text](Pictures%20for%20ReadMe/Results%20for%2050000.png?raw=true "Title")
 As expected the Unity update was slowest in execution but didnt take long to initialize.
 Slightly slower initiation, only a few ms, the Array was about 67% faster than the prior test case.
 
