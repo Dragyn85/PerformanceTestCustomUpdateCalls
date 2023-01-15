@@ -3,7 +3,7 @@ This is an extended version of my friend AlMartsons project about unity update c
 Main idea is to impliment an update manager who calls that update all your other scripts.
 You must also remove the empty Update method inside the MonoBehaviours or they will still be called and slow down your project.
 
-Taking control of your Updates this way is a good idea as you can easily extend the way your game is updated, you can, for instance, make more Update's with different intervals saving even more performance.
+Taking control of your Updates this way is a good idea as you can easily extend the way your game is updated, you can for instance make more update methods with different intervals saving even more performance.
 
 The "original project" was using an array of modified Monobehaviours that it cycles through with an for loop each update. The manager calls an update method on each element. Initially I wanted to try different approaches about the update manager for example using listeners.
 But also decided to update it with diffrent tests and make it more easily extended.
