@@ -17,9 +17,9 @@ using UnityEngine;
     {
         Result newResult = new Result() {
             name = testName,
-            initilizationTime = initTime,
+            initializationTimeIn_ms = initTime,
             avarageFPS = avgFPS,
-            avarageUpdateLenght = AvgUpdateLenght
+            avarageUpdateLenghtIn_ms = AvgUpdateLenght
         };
         results.Add(newResult);
       
@@ -32,7 +32,7 @@ using UnityEngine;
 public struct Result
 {
     public string name;
-    public string initilizationTime;
+    public string initializationTimeIn_ms;
     public float avarageFPS;
-    public string avarageUpdateLenght;
+    public string avarageUpdateLenghtIn_ms;
 }
