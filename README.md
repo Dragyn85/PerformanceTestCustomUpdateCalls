@@ -1,11 +1,12 @@
-# PerformanceTestCustomUpdateCalls
-This is an extended version of my friend AlMartson project about unity update calls performance fix.
-Main idea is avoiding Unity’s own update method if you are running many Monobehaviours at the same time by implimenting a update manager.
+# Performance Test Custom Update Calls
+This is an extended version of my friend AlMartsons project about unity update calls that works fine with a few components to update, but as the component count grows the performance will suffer.
+Main idea is to impliment an update manager who calls that update all your other scripts.
+You must also remove the empty Update method inside the MonoBehaviours or they will still be called and slow down your project.
 
-The original projects manager is using an array of modified Monobehaviours that it cycles through with an for loop each update. The manager calls a update method on each element.
+Taking control of your Updates this way is a good idea as you can easily extend the way your game is updated, you can, for instance, make more Update's with different intervals saving even more performance.
 
-Initially I wanted to try different approaches about the update manager for example using listeners.
-But also decided to update it with diffrent tests.
+The "original project" was using an array of modified Monobehaviours that it cycles through with an for loop each update. The manager calls an update method on each element. Initially I wanted to try different approaches about the update manager for example using listeners.
+But also decided to update it with diffrent tests and make it more easily extended.
 
 Current tests:
 - Unity Update
@@ -16,6 +17,7 @@ Current tests:
 
 Each manager updates a set amount of objects, all these updates do is increment an number, for 10 seconds.
 
+I was using Unity version 2021.3.16f1 and running on a desktop computer with fairly high
 
 ## Results and thoughts when testing with 10 000 and 50 000 updated gameobjects:
 ![Alt text](Pictures%20for%20ReadMe/Results%20for%2010000.png?raw=true "Title")![Alt text](Pictures%20for%20ReadMe/Results%20for%2050000.png?raw=true "Title")
