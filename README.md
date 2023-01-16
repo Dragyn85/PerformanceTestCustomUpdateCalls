@@ -16,8 +16,8 @@ Current tests:
 - Update manager with a List and foreach loop
 - Update manager with a List and for loop
 
-Each manager updates a set amount of objects, all these updates do is increment an number, for 10 seconds.
-Test Pc Spec's:
+Each manager updates a set amount of objects, all these updates do is increment an number, for 10 seconds.  
+💻Test Pc Spec's:
 CPU: Intel core I9 12600K
 RAM: 64Gb DDR4-3733MHz
 
