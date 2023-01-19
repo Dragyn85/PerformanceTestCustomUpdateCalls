@@ -1,4 +1,4 @@
-![alttext](https://img.shields.io/badge/Unity%20version-2021.3.16f1-lightgrey&?style=for-the-badge&logo=unity&color=lightgray)  ![alttext](https://img.shields.io/badge/License-MIT-lightgrey&?style=for-the-badge&color=green)  ![alttext](https://img.shields.io/badge/O.S-Windiws%2010-lightgrey&?style=for-the-badge&color=purple)
+![alttext](https://img.shields.io/badge/Unity%20version-2021.3.16f1-lightgrey&?style=for-the-badge&logo=unity&color=lightgray)  ![alttext](https://img.shields.io/badge/License-MIT-lightgrey&?style=for-the-badge&color=green)  ![alttext](https://img.shields.io/badge/O.S-Windows%2010-lightgrey&?style=for-the-badge&color=purple)
 # Performance Test Custom Update Calls
 This is an extended version of my friend AlMartsons project about unity update calls that works fine with a few components to update, but as the component count grows the performance will suffer.
 Main idea is to impliment an update manager who calls that update all your other scripts.
