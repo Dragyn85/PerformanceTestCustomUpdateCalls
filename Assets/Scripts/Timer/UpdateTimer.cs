@@ -35,8 +35,9 @@ public class UpdateTimer : MonoBehaviour
                 StatDisplay.Instance.SetAvarageFpsText(timer.GetAvarageFramePerSecond().ToString());
                 StatDisplay.Instance.SetAvarageUpdateLenghtText(timer.GetAvarageFrameLenghtInMS().ToString());
                 StatDisplay.Instance.HideRunningStatus();
+                var amountOfObejects = StatDisplay.Instance.GetNumberOfObjects();
                 string initTime = StatDisplay.Instance.GetInitTime();
-                RecordKeeper.Instance.AddResults(gameObject.name, initTime, timer.GetAvarageFramePerSecond(),timer.GetAvarageFrameLenghtInMS().ToString());
+                RecordKeeper.Instance.AddResults(gameObject.name, initTime, timer.GetAvarageFramePerSecond(),timer.GetAvarageFrameLenghtInMS().ToString(),amountOfObejects);
                 OnAnyTestCompleted?.Invoke();
             }
         }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Xml.Serialization;
 using TMPro;
 using UnityEngine;
@@ -16,6 +17,8 @@ public class StatDisplay : MonoBehaviour
     [SerializeField] TMP_Text runningTestText;
     [SerializeField] TMP_Text InitializingText;
     [SerializeField] Image RunningStatusBackground;
+
+    int numberOfObjects=0;
     private void Awake()
     {
         if (Instance == null)
@@ -33,6 +36,10 @@ public class StatDisplay : MonoBehaviour
     public void SetAvarageFpsText(string fps)
     {
         AvarageFPSField.text = fps;
+    }
+    public void SetNumberOfObjects(int amount)
+    {
+        numberOfObjects = amount;
     }
 
     public void HideRunningStatus()
@@ -65,5 +72,10 @@ public class StatDisplay : MonoBehaviour
     internal string GetInitTime()
     {
         return (Initialization.text);
+    }
+
+    internal int GetNumberOfObjects()
+    {
+        return numberOfObjects;
     }
 }

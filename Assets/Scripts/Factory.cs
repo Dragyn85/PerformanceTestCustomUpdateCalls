@@ -18,6 +18,7 @@ namespace ObserverManager
         {
             numberOfInstances = amountToSpawn;
             StatDisplay.Instance.ShowInitializingText();
+            StatDisplay.Instance.SetNumberOfObjects(amountToSpawn);
 
             StartCoroutine(CreateInstancesNextFrame(ObjectToInstanciate, numberOfInstances));
         }
